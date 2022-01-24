@@ -28,7 +28,7 @@ router.get('/', (req, res) => {
   })
   .then(dbPostData => {
     const posts = dbPostData.map(post => post.get({ plain: true }));
-    res.render('dashboard', {
+    res.render('homepage', {
       posts,
       loggedIn: req.session.loggedIn
     });
@@ -39,7 +39,7 @@ router.get('/', (req, res) => {
   });
 });
 
-// get single post
+// get single post by id
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {
