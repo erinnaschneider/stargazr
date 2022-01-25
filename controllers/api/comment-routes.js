@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
     comment_text: req.body.comment_text,
     user_id: req.session.user_id,
@@ -33,7 +32,7 @@ router.delete('/:id', withAuth, (req, res) => {
   })
     .then(dbCommentData => {
       if (!dbCommentData) {
-        res.status(404).json({ message: 'No comment found with this id!' });
+        res.status(404).json({ message: 'We could not find a comment with this ID :(' });
         return;
       }
       res.json(dbCommentData);

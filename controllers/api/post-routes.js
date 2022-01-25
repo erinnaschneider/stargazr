@@ -65,7 +65,7 @@ router.get('/:id', (req, res) => {
   })
     .then(dbPostData => {
       if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
+        res.status(404).json({ message: 'We could not find a post with this ID :(' });
         return;
       }
       res.json(dbPostData);
@@ -77,7 +77,6 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
     post_url: req.body.post_url,
@@ -91,7 +90,6 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/upvote', withAuth, (req, res) => {
-  // custom static method created in models/Post.js
   Post.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
     .then(updatedVoteData => res.json(updatedVoteData))
     .catch(err => {
@@ -113,7 +111,7 @@ router.put('/:id', withAuth, (req, res) => {
   )
     .then(dbPostData => {
       if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
+        res.status(404).json({ message: 'We could not find a post with this ID :(' });
         return;
       }
       res.json(dbPostData);
@@ -133,7 +131,7 @@ router.delete('/:id', withAuth, (req, res) => {
   })
     .then(dbPostData => {
       if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
+        res.status(404).json({ message: 'We could not find a post with this ID :(' });
         return;
       }
       res.json(dbPostData);
