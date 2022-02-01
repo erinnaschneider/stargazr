@@ -21,7 +21,7 @@ After cloning this repository, run _npm install_ in your terminal. A .env file w
 
 ## Contact
 If you have any questions, please do not hesitate to reach out to our contributing members:
-<a href='https://github.com/erinnaschneider'>Erinn Schneider</a><br>
+<br><a href='https://github.com/erinnaschneider'>Erinn Schneider</a><br>
 <a href='https://github.com/cewright98'>Claire Wright</a><br>
 <a href='https://github.com/raniahj'>Raniah Jeanlys</a><br>
 <a href='https://github.com/gabrielandrews'>Gabriel Andrews</a><br>
