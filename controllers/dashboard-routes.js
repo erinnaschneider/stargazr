@@ -11,7 +11,7 @@ router.get('/', withAuth, (req, res) => {
         },
         attributes: [
             'id',
-            'post_url',
+            'postBody',
             'title',
             'created_at'
         ],
