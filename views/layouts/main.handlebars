@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script>
     function getUsers() {
-      let response = fetch('https://api.nasa.gov/planetary/apod?api_key=bdbN0mhjoTXgAlabv1fbRhVgpHFTmujZcziYi5ZF').then(function (response) {
+      let response = fetch('https://api.nasa.gov/planetary/apod?api_key=xxx9LDgOuflA1McH44KMpOFFFakQgKtGQfzqCBRK').then(function (response) {
         if (response.ok) {
           response.json().then(function (data) {
             console.log(data.url);
@@ -27,15 +27,14 @@
 
 
 <body>
-  <div class="wrapper">
     <header>
+      <div id='header-image'>
+        <img id='nasa-image'>
+      </div>
       <h1>
         <a href="/">StarGazr</a>
       </h1>
 
-      <h2>
-
-      </h2>
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
@@ -44,6 +43,7 @@
         <a href="/login">login</a>
         {{/if}}
       </nav>
+
     </header>
     <main>
       <h1>
@@ -51,9 +51,8 @@
       {{{ body }}}
     </main>
     <footer>
-      Stargazers unite!
+      <h2>Stargazers Unite!</h2>
     </footer>
-  </div>
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
