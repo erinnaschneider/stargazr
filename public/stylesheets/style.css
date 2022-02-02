@@ -1,0 +1,144 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+        padding:0;
+        margin: 0;
+        /* display: flex; */
+        width: 100vw;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(248, 226, 196);
+        position: relative;
+}
+
+#header-image {
+  height: 600px;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+}
+
+header img {
+  width: 100%;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 55px;
+    color: #fce138;
+    top: 50%;
+    left: 42%;
+    display: inline;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+  }
+
+header h1 a {
+  color: #fce138;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #fce138;
+  text-decoration: underline;
+}
+
+header nav a, header nav button{
+  font-size: 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 12px;
+  right: 20px;
+  color: #fce138;
+}
+
+header nav button {
+  top: 40px;
+  background-color: transparent;
+  color: #fce138;
+}
+
+header nav a:hover, header nav button:hover {
+  text-decoration: underline;
+  color: #fce138;
+}
+
+footer{
+    padding:0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    width: 100vw;
+    height: 23vh;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+  }
+
+footer h2 {
+  bottom: 20px;
+  left: 50%;
+  color: #fce138;
+}
+
+main{
+  border: solid 3px #000000;
+  background-color: #fce138; 
+  padding: 20px;
+  width: 500px;
+  /* color: #4b4b4b;  */
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+
+button{
+  color: black;
+  background-color:rgb(253, 235, 211);
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.login-form label{
+    padding: 5px 11px;
+    margin: 2px 5px;
+
+}
+.signup-form label{
+    padding: 5px 11px;
+    margin: 2px 5px;
+}
+
+.new-post-form{
+    padding: 5px 11px;
+    margin: 2px 5px;
+}
+
+label{
+    padding: 5px 11px;
+    margin: 2px 5px;
+}
+
+.post-list p{
+    font-weight: 900;
+    margin: 12px 0;
+    text-align:center;
+    color: black;
+}
+
+.post-list li{
+    color: black;
+}
