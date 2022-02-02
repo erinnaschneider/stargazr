@@ -18,7 +18,7 @@ After cloning this repository, run _npm install_ in your terminal. A .env file w
 https://sleepy-beyond-47602.herokuapp.com/
 
 ## Screenshot
-![empty road with a night sky](https://static.boredpanda.com/blog/wp-content/uploads/2015/04/night-sky-stars-milky-way-photography-23__880.jpg)
+<img width="1440" alt="stargazr" src="https://user-images.githubusercontent.com/90404513/152249803-8067980b-7b28-45b1-9eaf-4c423bd9fc1d.png">
 
 ## Contact
 If you have any questions, please do not hesitate to reach out to our contributing members:
